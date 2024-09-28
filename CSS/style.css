@@ -1,0 +1,31 @@
+figcaption {
+  position: absolute;
+  bottom: -100%;
+  width: calc(100%-20px);
+  left: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: bottom 0.4s, opacity 0.8s;
+}
+
+figure img {
+  cursor: pointer;
+}
+.inner:hover figcaption {
+  bottom: 10px;
+  opacity: 1;
+}
+.my-modal {
+  background-color: #00000040;
+  z-index: 999;
+}
+.my-modal img {
+  width: 600px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  position: relative;
+}
+.my-modal i {
+  z-index: 20;
+  cursor: pointer;
+}
